@@ -13,8 +13,12 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:4200")
 public class ProjectController {
 
+    final ProjectService projectService;
+
     @Autowired
-    private ProjectService projectService;
+    public ProjectController(ProjectService projectService) {
+        this.projectService = projectService;
+    }
 
     @PostMapping("/upload")
     public List<Project> uploadCSVFile(@RequestParam("file") MultipartFile file,
