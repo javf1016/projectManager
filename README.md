@@ -1,3 +1,5 @@
+La lectura inicial se hace en front para capturar las categorias, ya seleccionando la categoria se envia con el numero de resultados y el archivo al back para realizar la consulta solicitada.
+
 # EndPoint del Servicio creado en Java
 http://localhost:8080/projects/upload
 
